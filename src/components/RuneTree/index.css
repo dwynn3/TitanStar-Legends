@@ -1,0 +1,81 @@
+.runetree {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 80px;
+
+  .runetree-container {
+  }
+
+  .runetree-tree {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .runetree-tree-title {
+      display: flex;
+      justify-content: start;
+      margin-right: 50px;
+    }
+
+    .runetree-tree-branch {
+      display: flex;
+      align-items: center;
+      margin: 30px 0px;
+
+      .bridge {
+        background: #1a1c1e;
+        border: 2px #1e2021 solid;
+        height: 20px;
+        width: 100px;
+        border-right: none;
+        border-left: none;
+      }
+
+      .bridge-active {
+        background: #313234;
+        border-color: #3c3f40;
+      }
+    }
+
+    > :last-child > :last-child {
+      display: none;
+    }
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .runetree {
+    flex-direction: column;
+
+    .runetree-container {
+      display: flex;
+      gap: 40px;
+    }
+
+    .runetree-tree {
+      flex-direction: column;
+
+      .runetree-tree-title {
+        margin-right: 0;
+      }
+
+      .runetree-tree-branch {
+        flex-direction: column;
+        margin: 0;
+
+        .bridge {
+          width: 20px;
+          height: 100px;
+          border: 2px #1e2021 solid;
+          border-top: none;
+          border-bottom: none;
+        }
+
+        .bridge-active {
+          border-color: #3c3f40;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,62 @@
+.rune {
+  background: url("../../../assets/talent-icons-sprite.png");
+  height: 60px;
+  width: 60px;
+  background-position-y: -50px;
+  border: 5px solid;
+  border-image: linear-gradient(
+      180deg,
+      #4c4c4c 0 50%,
+      #393939 50%,
+      #4c4c4c 100%
+    )
+    1;
+}
+
+.rune:hover {
+  background-position-y: 100px;
+}
+
+.rune-active {
+  background-position-y: 100px;
+  box-shadow: 0px 0px 10px #6eabea;
+  border-image: linear-gradient(
+      180deg,
+      #6eabea 0 50%,
+      #22374d 50%,
+      #6eabea 100%
+    )
+    1;
+}
+
+#rune-chevrons {
+  background-position-x: 0px;
+}
+
+#rune-silverware {
+  background-position-x: -50px;
+}
+
+#rune-cake {
+  background-position-x: -100px;
+}
+
+#rune-crown {
+  background-position-x: -150px;
+}
+
+#rune-boat {
+  background-position-x: -200px;
+}
+
+#rune-scuba {
+  background-position-x: -250px;
+}
+
+#rune-lightning {
+  background-position-x: -300px;
+}
+
+#rune-skull {
+  background-position-x: -350px;
+}

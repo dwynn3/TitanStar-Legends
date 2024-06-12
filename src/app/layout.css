@@ -1,0 +1,10 @@
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: initial;
+  color: #fff;
+  background: #000;
+  min-height: 100vh;
+  min-width: 100vw;
+}
